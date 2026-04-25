@@ -1,18 +1,44 @@
-# FL-STRIKE Decision Dashboard
+# FL Strike Decision Dashboard
 
-نسخة لوحة قرار تضيف:
-- Market Intent: نية السوق من SPY/QQQ + Breadth + Momentum + Rejection
-- Best Candidate: أفضل سهم الآن بناء على Score + Bias + عدم المطاردة
-- Smart Ranking
-- Options Flow Proxy
-- News Catalyst
+أداة ويب عربية مجانية لقراءة الانطباع الأول للسوق:
 
-## التشغيل
+- الوقت والتقويم وحالة السوق
+- نية السوق
+- السيولة والقيادة القطاعية
+- Flow Proxy
+- أقوى الأسهم المتفاعلة
+- الترند الاجتماعي وآراء السوق
+- الأخبار والمحفزات
+- سكانر الأسهم القيادية
+- سكانر الأسهم الصغيرة
+- نظام نقاط وتصنيف
+
+## التشغيل المحلي
+افتح `index.html` عبر سيرفر محلي بسيط:
 
 ```bash
-pip install -r requirements.txt
-streamlit run app.py
+python -m http.server 8000
+```
+ثم افتح:
+
+```text
+http://localhost:8000
 ```
 
+## الرفع على GitHub Pages
+1. أنشئ Repository جديد.
+2. ارفع الملفات كما هي.
+3. من Settings > Pages اختر Deploy from branch.
+4. اختر branch: main و folder: root.
+
+## تحديث البيانات
+الملف المستخدم مبدئيًا:
+
+```text
+data/stocks.csv
+```
+
+يمكن استبداله يوميًا بملف CSV جديد بنفس الأعمدة.
+
 ## ملاحظة
-هذه أداة انطباع أول وفرز، وليست توصية دخول مباشرة.
+هذه النسخة مجانية وتعتمد على CSV/بيانات عينة. لا تعتبر توصية تداول.
