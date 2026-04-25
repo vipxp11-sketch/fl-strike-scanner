@@ -1,27 +1,18 @@
-# FL-STRIKE Scanner
+# FL-STRIKE Decision Dashboard
 
-تطبيق Streamlit بسيط لفلترة الأسهم المتفاعلة يوميًا.
+نسخة لوحة قرار تضيف:
+- Market Intent: نية السوق من SPY/QQQ + Breadth + Momentum + Rejection
+- Best Candidate: أفضل سهم الآن بناء على Score + Bias + عدم المطاردة
+- Smart Ranking
+- Options Flow Proxy
+- News Catalyst
 
-## التشغيل المحلي
+## التشغيل
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## الرفع كرابط مجاني
-
-1. ادخل GitHub.
-2. أنشئ Repository جديد.
-3. ارفع ملفي:
-   - app.py
-   - requirements.txt
-4. ادخل Streamlit Cloud.
-5. New App.
-6. اختر الريبو.
-7. Main file path:
-   app.py
-8. Deploy.
-
-بعدها يعطيك رابط مباشر مثل:
-https://your-app-name.streamlit.app
+## ملاحظة
+هذه أداة انطباع أول وفرز، وليست توصية دخول مباشرة.
